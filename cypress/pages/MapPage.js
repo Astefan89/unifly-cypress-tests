@@ -40,8 +40,8 @@ class MapPage {
    searchLocation(city) {
     cy.get('[data-test="locationSearch.input"]')
       .should('be.visible')
-      .click({ force: true })
-      .type(city, { force: true })
+      .click()
+      .type(city)
   }
   selectFirstSuggestion() {
     cy.get('.rs-select__menu').should('be.visible')
