@@ -1,7 +1,8 @@
-import app from '../pages/AppPage'
-import map from '../pages/MapPage'
+import app from '../pages/AppPage';
+import map from '../pages/MapPage';
 
 describe('Unifly - Map page', () => {
+    
   beforeEach(() => {
     // Arrange: open app before each test
     app.open()
@@ -10,7 +11,7 @@ describe('Unifly - Map page', () => {
     cy.url().should('include', 'unifly')
   });
 
-    it('should search Paris and select correct location', () => {
+it('should search Paris and select correct location', () => {
 
     // Arrange
     map.interceptLocationSearch()  
@@ -22,5 +23,6 @@ describe('Unifly - Map page', () => {
     // Assert
     map.verifySelectedLocation('Paris')
     map.verifyLocationCoordinates()
-  })
+
+   })
 });
