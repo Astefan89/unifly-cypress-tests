@@ -1,5 +1,5 @@
-import app from '../pages/AppPage';
-import map from '../pages/MapPage';
+import app from "../pages/AppPage";
+import map from "../pages/MapPage";
 
 describe('Unifly - Map page', () => {
     
